@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:contentDescription="@string/home_image"
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +30,7 @@
             android:padding="15dp"
             android:text="Who are You\nShopping for Today?"
             android:textColor="@color/black"
-            android:textSize="23dp" />
+            android:textSize="23sp" />
 
         <LinearLayout
             android:id="@+id/linear"
@@ -38,6 +39,7 @@
             android:layout_below="@+id/tv_Who_are_you"
             android:orientation="horizontal"
             android:padding="15dp"
+            android:baselineAligned="false"
             android:weightSum="3">
 
 
@@ -58,6 +60,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:scaleType="centerCrop"
+                        android:contentDescription="@string/boy"
                         android:background="@drawable/circle_bg"
                         android:src="@drawable/askboy" />
 
@@ -67,7 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Boy"
+                    android:text="@string/boy"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -90,6 +93,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:scaleType="centerCrop"
+                        android:contentDescription="@string/girl"
                         android:background="@drawable/circle_bg"
                         android:src="@drawable/askgirl" />
 
@@ -99,7 +103,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Girl"
+                    android:text="@string/girl"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -122,6 +126,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:scaleType="centerCrop"
+                        android:contentDescription="@string/expecting"
                         android:background="@drawable/circle_bg"
                         android:src="@drawable/askwoman" />
 
@@ -131,7 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Expecting"
+                    android:text="@string/expecting"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -154,7 +159,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAlignment="textEnd"
-                android:text="Already registered?  "
+                android:text="@string/already_registered"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 android:gravity="end" />
@@ -165,7 +170,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:focusable="true"
-                android:text="Sign In"
+                android:text="@string/sign_in"
                 android:textColor="#234FD3"
                 android:textSize="15sp" />
         </LinearLayout>

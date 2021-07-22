@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FirstCry</string>
+    <string name="home_image">Home Image</string>
+    <string name="boy">Boy</string>
+    <string name="girl">Girl</string>
+    <string name="expecting">Expecting</string>
+    <string name="already_registered">Already registered?</string>
+    <string name="sign_in">Sign In</string>
 </resources>
