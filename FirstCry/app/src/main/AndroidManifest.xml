@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstCry">
-        <activity android:name=".Register"></activity>
+        <activity android:name=".MainActivity3"></activity>
+        <activity android:name=".Register" />
         <activity android:name=".Login" />
-        <activity android:name=".LogIn" />
         <activity android:name=".AskUserActivity"></activity>
         <activity android:name=".Home_Page_Activity"></activity>
         <activity android:name=".MainActivity">
