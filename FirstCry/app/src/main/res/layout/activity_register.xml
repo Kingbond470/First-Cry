@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeView"
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp"
+        android:id="@+id/toolBar"
+        android:layout_marginBottom="20dp"
+
+        >
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_menu_24"
+            />
+        <ImageView
+            android:layout_marginStart="150dp"
+            android:layout_width="40sp"
+            android:layout_height="40dp"
+            android:src="@drawable/heart"
+            android:layout_marginLeft="150dp" />
+        <ImageView
+            android:layout_marginStart="10sp"
+            android:layout_width="40sp"
+            android:layout_height="40dp"
+            android:src="@drawable/search"
+            android:layout_marginLeft="10sp" />
+        <ImageView
+            android:layout_marginStart="10sp"
+            android:layout_width="40sp"
+            android:layout_height="40dp"
+            android:src="@drawable/notification"
+            android:layout_marginLeft="10sp" />
+        <ImageView
+            android:layout_marginStart="10sp"
+            android:layout_width="40sp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_shopping_cart_24"
+            android:layout_marginLeft="10sp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/viewArrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/toolBar"
+        android:background="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_margin="10sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="25sp"
+        android:layout_toEndOf="@id/viewArrow"
+        android:layout_below="@+id/toolBar"
+        android:layout_toRightOf="@id/viewArrow" />
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewArrow"
+        android:layout_margin="10sp"
+        android:text="Full Name"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter your full name"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp" />
+    <TextView
+        android:id="@+id/tvMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etName"
+        android:layout_margin="10sp"
+        android:text="Mobile Number"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/etMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMobile"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter your Mobile Number"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp" />
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etMobile"
+        android:layout_margin="10sp"
+        android:text="Email Id"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmail"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter your Email Id"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp" />
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEmail"
+        android:layout_margin="10sp"
+        android:text="Password"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPassword"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter your Password"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp" />
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:text="Password must be atleast 8 charecter long with
+1 Uppercase, 1 lowercase and 1 Numaric character"
+        android:textColor="@color/black"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp" />
+    <Button
+        android:id="@+id/btnContinue1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvInfo"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10sp"
+        android:text="Continue"
+        android:backgroundTint="#fc2c03"
+        android:layout_marginRight="20dp" />
+</RelativeLayout>
