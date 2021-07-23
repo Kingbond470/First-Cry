@@ -6,75 +6,116 @@
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:id="@+id/relativeView"
-    android:padding="10dp"
+    android:padding="15dp"
+    android:layout_margin="10dp"
     >
 
-    <LinearLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/relative_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10sp"
-        android:id="@+id/toolBar"
-        android:padding="3dp"
-        android:layout_marginBottom="20dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        >
-        <ImageView
-            android:layout_width="40sp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_baseline_menu_24"
-            />
-        <ImageView
-            android:layout_marginStart="150dp"
-            android:layout_width="40sp"
-            android:layout_height="40dp"
-            android:src="@drawable/heart"
-            android:layout_marginLeft="150dp" />
-        <ImageView
-            android:layout_marginStart="10sp"
-            android:layout_width="40sp"
-            android:layout_height="40dp"
-            android:src="@drawable/search"
-            android:layout_marginLeft="10sp" />
-        <ImageView
-            android:layout_marginStart="10sp"
-            android:layout_width="40sp"
-            android:layout_height="40dp"
-            android:src="@drawable/notification"
-            android:layout_marginLeft="10sp" />
-        <ImageView
-            android:layout_marginStart="10sp"
-            android:layout_width="40sp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_baseline_shopping_cart_24"
-            android:layout_marginLeft="10sp" />
-    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="false"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_menu" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/firstcry_cart_logo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-7dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/notification_counter"
+                android:layout_toLeftOf="@+id/notification_counter"
+                app:srcCompat="@drawable/search" />
+
+            <include
+                android:id="@+id/notification_counter"
+                layout="@layout/notification_icon_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/iv_wishlist_icon"
+                android:layout_toLeftOf="@+id/iv_wishlist_icon" />
+
+            <ImageView
+                android:id="@+id/iv_wishlist_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-7dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/cart_counter"
+                android:layout_toLeftOf="@+id/cart_counter"
+                app:srcCompat="@drawable/wishlist_icon" />
+
+            <include
+                android:id="@+id/cart_counter"
+                layout="@layout/cart_icon_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                app:srcCompat="@drawable/cart_icon"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
     <View
         android:id="@+id/viewArrow"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_below="@id/toolBar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/relative_layout"
         android:background="@drawable/ic_baseline_arrow_back_ios_24"
-        android:layout_margin="10sp"
+        android:layout_margin="15dp"
         />
     <TextView
+        android:layout_marginTop="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
+        android:textColor="@color/black"
         android:textSize="25sp"
+        android:textStyle="normal"
         android:layout_toEndOf="@id/viewArrow"
-        android:layout_below="@+id/toolBar"
+        android:layout_below="@+id/relative_layout"
         android:layout_toRightOf="@id/viewArrow" />
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/viewArrow"
-        android:layout_margin="10sp"
+        android:layout_margin="10dp"
         android:text="Full Name"
         android:textSize="20dp"
         android:textColor="@color/black"
-        android:textStyle="bold"
+        android:textStyle="normal"
         />
     <EditText
         android:id="@+id/etName"
@@ -82,7 +123,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvName"
         android:layout_marginEnd="20dp"
-        android:hint="Enter your full name"
+        android:hint="Enter your Full Name"
+        android:fontFamily="@font/roboto_light"
         android:textSize="20dp"
         android:layout_marginRight="20dp" />
     <TextView
@@ -94,7 +136,7 @@
         android:text="Mobile Number"
         android:textSize="20dp"
         android:textColor="@color/black"
-        android:textStyle="bold"
+        android:textStyle="normal"
         />
     <EditText
         android:id="@+id/etMobile"
@@ -103,6 +145,7 @@
         android:layout_below="@+id/tvMobile"
         android:layout_marginEnd="20dp"
         android:hint="Enter your Mobile Number"
+        android:fontFamily="@font/roboto_light"
         android:textSize="20dp"
         android:inputType="number"
         android:layout_marginRight="20dp" />
@@ -112,10 +155,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/etMobile"
         android:layout_margin="10sp"
-        android:text="Email Id"
+        android:text="Email ID"
         android:textSize="20dp"
         android:textColor="@color/black"
-        android:textStyle="bold"
+        android:textStyle="normal"
         />
     <EditText
         android:id="@+id/etEmail"
@@ -123,7 +166,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvEmail"
         android:layout_marginEnd="20dp"
-        android:hint="Enter your Email Id"
+        android:hint="Enter your Email ID"
+        android:fontFamily="@font/roboto_light"
         android:textSize="20dp"
         android:layout_marginRight="20dp" />
     <TextView
@@ -135,17 +179,19 @@
         android:text="Password"
         android:textSize="20dp"
         android:textColor="@color/black"
-        android:textStyle="bold"
+        android:textStyle="normal"
         />
+
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvPassword"
         android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto_light"
         android:hint="Enter your Password"
-        android:textSize="20dp"
-        android:layout_marginRight="20dp" />
+        android:textSize="20dp" />
     <TextView
         android:id="@+id/tvInfo"
         android:layout_width="wrap_content"
@@ -163,8 +209,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tvInfo"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="10sp"
+        android:layout_marginTop="30dp"
         android:text="Continue"
+        android:textColor="@color/white"
         android:backgroundTint="#fc2c03"
         android:layout_marginRight="20dp" />
 </RelativeLayout>
