@@ -86,64 +86,65 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:layout_margin="10dp"
-        android:text="Login / Register"
-        android:textColor="@color/black"
-        android:textSize="20dp" />
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login / Register"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Email ID / Mobile No."
-        android:textColor="@color/black"
-        android:textSize="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email ID / Mobile No."
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
 
-    <EditText
-        android:id="@+id/etNameorEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:fontFamily="@font/roboto_light"
-        android:hint="Enter your Email ID or Mobile No."
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="15dp" />
+        <EditText
+            android:id="@+id/etNameorEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Enter your Email ID or Mobile No."
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="18dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:padding="5dp"
-        android:layout_margin="10dp"
-        android:textStyle="normal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal" />
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:hint="Enter your Password"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:fontFamily="@font/roboto_light"
-        android:textStyle="normal" />
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Password"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_light"
+            android:textStyle="normal" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnContinue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:background="#FF5722"
         android:text="Continue"
@@ -199,8 +200,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto"
         android:gravity="center"
+        android:textSize="15sp"
         android:layout_marginTop="10dp"
         android:text="New to FirstCry? Register Here"
-        android:textColor="#3F51B5"
-        android:textStyle="normal" />
+        android:textColor="#3F51B5" />
 </LinearLayout>
