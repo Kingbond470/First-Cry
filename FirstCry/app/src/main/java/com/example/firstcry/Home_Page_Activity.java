@@ -24,7 +24,7 @@ public class Home_Page_Activity extends AppCompatActivity {
         ivCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Home_Page_Activity.this,CartActivity.class);
+                Intent intent=new Intent(Home_Page_Activity.this,Cart.class);
                 startActivity(intent);
             }
         });

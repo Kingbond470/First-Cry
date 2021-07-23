@@ -85,7 +85,7 @@ public class Login extends AppCompatActivity {
         }
     }
     private void login() {
-        Intent intent=new Intent(Login.this,Home_Page_Activity.class);  // the class where it will go after login
+        Intent intent=new Intent(Login.this,HomeActivity.class);  // the class where it will go after login
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

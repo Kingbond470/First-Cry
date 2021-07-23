@@ -41,5 +41,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.github.smarteist:autoimageslider:1.4.0'
     implementation 'com.github.smarteist:autoimageslider:1.4.0-appcompat'
-
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
 }
