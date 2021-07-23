@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cart">
+    tools:context=".Parenting">
 
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/relative_layout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/white"
+        android:background="@color/pink"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -25,11 +25,11 @@
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
-                android:src="@drawable/firstcry_cart_logo"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:src="@drawable/firstcry_parenting_logo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
 
             <ImageView
-                android:id="@+id/iv_search_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentTop="true"
@@ -38,40 +38,16 @@
                 android:layout_marginRight="10dp"
                 android:layout_toStartOf="@+id/notification_counter"
                 android:layout_toLeftOf="@+id/notification_counter"
-                app:srcCompat="@drawable/search" />
+                app:srcCompat="@drawable/search"
+                app:tint="@color/white" />
+
 
             <include
                 android:id="@+id/notification_counter"
-                layout="@layout/notification_icon_layout"
+                layout="@layout/notification_icon_layout_2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_toStartOf="@+id/iv_wishlist_icon"
-                android:layout_toLeftOf="@+id/iv_wishlist_icon" />
-
-            <ImageView
-                android:id="@+id/iv_wishlist_icon"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="-7dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_toStartOf="@+id/cart_counter"
-                android:layout_toLeftOf="@+id/cart_counter"
-                app:srcCompat="@drawable/wishlist_icon" />
-
-            <include
-                android:id="@+id/cart_counter"
-                layout="@layout/cart_icon_layout"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_alignParentEnd="true"
-                app:srcCompat="@drawable/cart_icon"
                 android:layout_alignParentRight="true" />
 
         </RelativeLayout>
@@ -88,22 +64,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relative_layout"
         app:tabIndicator="@color/white"
-        app:tabIndicatorColor="@color/orange"
+        app:tabIndicatorColor="@color/pink"
         app:tabIndicatorHeight="3dp"
-        app:tabGravity="fill"
-        app:tabSelectedTextColor="@color/black"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/pink"
         app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
         app:tabTextColor="@color/grey">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cart -0 Item" />
+            android:text="HOME" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Shortlist" />
+            android:text="READ" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DocConnect" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q&amp;A" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEMORIES" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VACCINE &amp; GROWTH" />
 
     </com.google.android.material.tabs.TabLayout>
 

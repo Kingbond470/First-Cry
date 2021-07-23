@@ -16,7 +16,7 @@
         <ImageButton
             android:layout_width="40sp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_baseline_menu_24"
+            app:srcCompat="@drawable/ic_baseline_menu_24"
             android:layout_marginStart="10sp"
             android:layout_marginLeft="10sp" />
         <ImageButton
@@ -29,19 +29,19 @@
             android:layout_marginStart="10sp"
             android:layout_width="40sp"
             android:layout_height="40dp"
-            android:src="@drawable/search"
+            app:srcCompat="@drawable/search"
             android:layout_marginLeft="10sp" />
         <ImageButton
             android:layout_marginStart="10sp"
             android:layout_width="40sp"
             android:layout_height="40dp"
-            android:src="@drawable/notification"
+            app:srcCompat="@drawable/notification"
             android:layout_marginLeft="10sp" />
         <ImageButton
             android:layout_marginStart="10sp"
             android:layout_width="40sp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_baseline_shopping_cart_24"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_24"
             android:layout_marginLeft="10sp" />
     </LinearLayout>
     <TextView

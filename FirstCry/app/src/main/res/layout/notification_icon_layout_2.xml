@@ -11,14 +11,16 @@
         android:layout_height="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/notification_icon" />
+        app:srcCompat="@drawable/notification_icon"
+        app:tint="@color/white" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/notification_counter_card_view"
         android:layout_width="18dp"
         android:layout_height="18dp"
         app:cardCornerRadius="100dp"
-        android:backgroundTint="@color/yellow"
+        app:strokeColor="@color/pink"
+        app:strokeWidth="2dp"
         app:layout_constraintEnd_toEndOf="@+id/notification_image_button"
         app:layout_constraintTop_toTopOf="@+id/notification_image_button" >
 
@@ -32,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
                 android:text="0"
-                android:textColor="@color/black"
+                android:textColor="@color/pink"
                 android:textSize="10sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
