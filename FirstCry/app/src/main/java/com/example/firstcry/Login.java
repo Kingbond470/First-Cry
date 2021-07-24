@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +33,7 @@ public class Login extends AppCompatActivity {
     private Button mBtnContinue;
     private Button mBtnFacebook;
     private Button mBtnGoogle;
+    private Button btnShowHide;
     private TextView mTvRegister;
     private String emailValidation = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     private static final String validNumber = "^[6789][0-9]{9}$";
@@ -85,6 +88,19 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        btnShowHide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mEtPassword.getTransformationMethod().equals(PasswordTransformationMethod.getInstance())){
+                    mEtPassword.setTransformationMethod((HideReturnsTransformationMethod.getInstance()));
+                    btnShowHide.setText("Hide");
+                } else {
+                    mEtPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    btnShowHide.setText("Show");
+                }
+            }
+        });
+
     }
 
     private void initViews() {
@@ -103,6 +119,8 @@ public class Login extends AppCompatActivity {
 
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
+
+        btnShowHide = findViewById(R.id.showHideBtn);
     }
 
     private void PerformLogin(){
@@ -122,7 +140,7 @@ public class Login extends AppCompatActivity {
                     if(task.isSuccessful())
                     {
                         progressDialog.dismiss();
-                        Toast.makeText(Login.this,"Login SuccesFull",
+                        Toast.makeText(Login.this,"Login Successful",
                                 Toast.LENGTH_SHORT).show();
                         login();
                     }

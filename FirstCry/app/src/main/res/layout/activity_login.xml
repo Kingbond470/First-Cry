@@ -141,16 +141,31 @@
             android:textSize="20sp"
             android:textStyle="normal" />
 
-        <EditText
-            android:id="@+id/etPassword"
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/roboto_light"
-            android:hint="Enter your Password"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="normal" />
+            android:layout_below="@+id/etemail">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/showHideBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:background="@color/transparent"
+                android:text="Show"
+                android:textColor="#a6a6a6" />
+
+        </FrameLayout>
 
     </LinearLayout>
 
@@ -164,7 +179,6 @@
         android:background="#FF5722"
         android:text="Continue"
         android:textColor="@color/white"
-
         />
 
     <TextView

@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,6 +30,8 @@ public class Register extends AppCompatActivity {
     private EditText mEtEmail;
     private EditText mEtPassword;
     private Button mBtnContinue;
+    private Button btnShowHide;
+
     private String emailValidation = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     private ProgressDialog progressDialog;
 
@@ -68,6 +72,19 @@ public class Register extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnShowHide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mEtPassword.getTransformationMethod().equals(PasswordTransformationMethod.getInstance())){
+                    mEtPassword.setTransformationMethod((HideReturnsTransformationMethod.getInstance()));
+                    btnShowHide.setText("Hide");
+                } else {
+                    mEtPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    btnShowHide.setText("Show");
+                }
+            }
+        });
     }
 
     private void PerformAuth() {
@@ -89,7 +106,7 @@ public class Register extends AppCompatActivity {
                     if(task.isSuccessful())
                     {
                         progressDialog.dismiss();
-                        Toast.makeText(Register.this,"Regidter SuccesFull",Toast.LENGTH_LONG).show();
+                        Toast.makeText(Register.this,"Registration Successful",Toast.LENGTH_LONG).show();
                         login();
                     }
                     else
@@ -124,5 +141,7 @@ public class Register extends AppCompatActivity {
         progressDialog =new ProgressDialog(Register.this);
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
+
+        btnShowHide=findViewById(R.id.showHideBtn);
     }
 }
