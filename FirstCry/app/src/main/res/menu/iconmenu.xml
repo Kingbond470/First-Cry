@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+    <item android:id="@+id/menu_notification"
+        android:icon="@drawable/notification"
+        android:title="Notification"/>
+    <item android:id="@+id/menu_offer"
+        android:icon="@drawable/offer"
+        android:title="Offer"/>
+    <item android:id="@+id/menu_favourite"
+        android:icon="@drawable/favourite"
+        android:title="Parenting"/>
+    <item android:id="@+id/menu_rate"
+        android:icon="@drawable/rate"
+        android:title="Rate this app"/>
+    <item android:id="@+id/menu_support"
+        android:icon="@drawable/support"
+        android:title="Support"/>
+    <item android:id="@+id/menu_policy"
+        android:icon="@drawable/policy"
+        android:title="Privacy and policy"/>
+    <item android:id="@+id/menu_sell_with_us"
+        android:icon="@drawable/sell_with_us"
+        android:title="Sell With Us"/>
+
+</menu>

@@ -11,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstCry">
+        <activity android:name=".Support"></activity>
+        <activity android:name=".Offer" />
         <activity android:name=".Wishlist" />
         <activity android:name=".Notification" />
         <activity android:name=".HomeActivity" />
@@ -19,13 +21,12 @@
         <activity android:name=".Login" />
         <activity android:name=".AskUserActivity" />
         <activity android:name=".Home_Page_Activity" />
-        <activity android:name=".Parenting">
-
-        </activity>
+        <activity android:name=".Parenting" />
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 

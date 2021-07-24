@@ -2,9 +2,10 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_below="@+id/tvTopic"
     android:layout_margin="12dp"
-    android:background="@color/white"
-    android:layout_below="@+id/tvTopic">
+    android:background="@color/white">
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -19,11 +20,20 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:gravity="center"
-            android:src="@drawable/img"
             android:scaleType="centerCrop"
-            />
-    </RelativeLayout>
+            android:src="@drawable/img" />
 
+        <TextView
+            android:id="@+id/tvCat"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/imgImage"
+            android:gravity="center"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
 
 </androidx.cardview.widget.CardView>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Support">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/View1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fdde6c" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_arrow_down"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="40dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/View1"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dear Customer,"
+                android:layout_marginStart="60dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="60dp" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Due to the unprecedented spike of COVID-19 cases across the country, our Contact Center operation have been impacted."
+                android:layout_marginLeft="60dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="75dp"
+                android:layout_marginStart="132dp"
+                android:textSize="16dp"
+                android:text="We are therefore compelled to"
+                android:layout_marginLeft="132dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="95dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="our operation till the situation normalizes."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="113dp"
+                android:textSize="16dp"
+                android:text="However, we would continue to provide support for your concern over Emails."
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                android:textSize="16dp"
+                android:text="Through endeavor would be to respond as quicklyas possible, but please do allow us to revert in 24-48 hours. For further assistance, please feel free to reach out to us via blow mention options."
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="285dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:text="Dispatch of orders from our end as well as Deliveries" />
+            <TextView
+                android:id="@+id/viewlast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="305dp"
+                android:textSize="15dp"
+                android:layout_marginStart="85dp"
+                android:text="have also been severely hampered "
+                android:layout_marginLeft="85dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="during the last weeks and may continue for some more time. As such, we seek your cooperation in allowing us time extensions."
+                android:textStyle="bold"
+                android:layout_marginTop="323dp"
+                android:textSize="16dp"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CardView1"
+            android:layout_margin="15dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/businesssupplier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="60dp"
+                android:text="Business/Supplier Tie Up"
+                android:layout_marginLeft="60dp" />
+            <TextView
+                android:id="@+id/query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/businesssupplier"
+                android:layout_marginTop="53dp"
+                android:text="To raise any order related query, click here to Login to continue"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_email_24"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginStart="20dp"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="118dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="SEND US YOUR QUERY"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="165dp"
+                android:hint="EmailAddress"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="91"
+                android:layout_marginTop="210dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="210dp"
+                android:layout_marginStart="45dp"
+                android:hint="Mobile Number"
+                android:layout_marginLeft="45dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="260dp"
+                android:text="Issue Type"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="275dp"
+                android:hint="Other"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:drawableRight="@drawable/ic_arrow_down" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="325dp"
+                android:text="Issue Details"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="335dp"
+                android:hint="Business / Supplier Tie Up"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:drawableRight="@drawable/ic_arrow_down" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="395dp"
+                android:hint="Write your Query here"/>
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="610dp"
+                android:text="Submit"
+                android:layout_marginStart="120dp"
+                android:background="#FF7F50"
+                android:textColor="@color/white"
+                android:layout_marginLeft="120dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+</ScrollView>

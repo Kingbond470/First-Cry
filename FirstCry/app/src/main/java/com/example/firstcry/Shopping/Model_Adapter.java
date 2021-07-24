@@ -36,4 +36,3 @@ public class Model_Adapter extends RecyclerView.Adapter<Model_Holder>{
         return imageButtons.size();
     }
 }
-

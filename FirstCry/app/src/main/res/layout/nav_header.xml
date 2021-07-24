@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/teal_200"
+    >
+    <ImageView
+        android:id="@+id/image_header"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:src="@drawable/firstcry"
+        android:layout_margin="5dp"
+        />
+    <LinearLayout
+        android:layout_gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/account"
+            android:layout_marginLeft="20dp" />
+        <ImageView
+            android:layout_marginStart="25sp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/search"
+            android:layout_marginLeft="25sp" />
+        <ImageView
+            android:layout_marginStart="25dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/notification"
+            android:layout_marginLeft="25dp" />
+        <ImageView
+            android:layout_marginStart="25dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_24"
+            android:layout_marginLeft="25dp" />
+    </LinearLayout>
+
+</LinearLayout>
