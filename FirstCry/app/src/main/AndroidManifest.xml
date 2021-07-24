@@ -11,12 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstCry">
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".Wishlist"></activity>
+        <activity android:name=".Notification" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".Cart" />
         <activity android:name=".Register" />
         <activity android:name=".Login" />
         <activity android:name=".AskUserActivity" />
         <activity android:name=".Home_Page_Activity" />
+        <activity android:name=".Parenting">
+
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

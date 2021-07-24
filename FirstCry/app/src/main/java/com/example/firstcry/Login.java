@@ -6,9 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +23,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class Login extends AppCompatActivity {
 
+    private ImageView ivMenuBar, ivWishlist;
+    private LinearLayout ivNotification, ivCart;
 
     private EditText mEtEmail;
     private EditText mEtPassword;
@@ -34,6 +39,7 @@ public class Login extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseUser mUser;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,12 +52,57 @@ public class Login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // login page
         mBtnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 PerformLogin();
             }
         });
+
+        ivWishlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Login.this, Cart.class);
+                startActivity(intent);
+            }
+        });
+
+        ivNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Login.this, Notification.class);
+                startActivity(intent);
+            }
+        });
+
+        ivCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Login.this, Cart.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+
+    private void initViews() {
+        ivMenuBar=findViewById(R.id.menu_bar);
+        ivNotification=findViewById(R.id.notification_counter);
+        ivWishlist=findViewById(R.id.iv_wishlist_icon);
+        ivCart=findViewById(R.id.cart_counter);
+
+        mEtEmail=findViewById(R.id.etNameorEmail);
+        mEtPassword=findViewById(R.id.etPassword);
+        mBtnContinue=findViewById(R.id.btnContinue);
+        mBtnFacebook=findViewById(R.id.btnFacebook);
+        mBtnGoogle=findViewById((R.id.btnGoogle));
+        mTvRegister=findViewById(R.id.tvRegister);
+        progressDialog =new ProgressDialog(Login.this);
+
+        mAuth=FirebaseAuth.getInstance();
+        mUser=mAuth.getCurrentUser();
     }
 
     private void PerformLogin(){
@@ -90,16 +141,5 @@ public class Login extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void initViews() {
-        mEtEmail=findViewById(R.id.etNameorEmail);
-        mEtPassword=findViewById(R.id.etPassword);
-        mBtnContinue=findViewById(R.id.btnContinue);
-        mBtnFacebook=findViewById(R.id.btnFacebook);
-        mBtnGoogle=findViewById((R.id.btnGoogle));
-        mTvRegister=findViewById(R.id.tvRegister);
-        progressDialog =new ProgressDialog(Login.this);
 
-        mAuth=FirebaseAuth.getInstance();
-        mUser=mAuth.getCurrentUser();
-    }
 }

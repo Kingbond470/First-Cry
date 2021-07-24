@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -17,6 +19,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class Register extends AppCompatActivity {
+
+    private ImageView ivMenuBar, ivWishlist;
+    private LinearLayout ivNotification, ivCart;
+
     private EditText mEtName;
     private EditText mEtMobile;
     private EditText mEtEmail;
@@ -30,11 +36,36 @@ public class Register extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);initViews();
+        setContentView(R.layout.activity_register);
+        initViews();
         mBtnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 PerformAuth();
+            }
+        });
+
+        ivWishlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Register.this, Cart.class);
+                startActivity(intent);
+            }
+        });
+
+        ivNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Register.this, Notification.class);
+                startActivity(intent);
+            }
+        });
+
+        ivCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Register.this, Cart.class);
+                startActivity(intent);
             }
         });
     }
@@ -79,6 +110,11 @@ public class Register extends AppCompatActivity {
     }
 
     private void initViews() {
+        ivMenuBar=findViewById(R.id.menu_bar);
+        ivNotification=findViewById(R.id.notification_counter);
+        ivWishlist=findViewById(R.id.iv_wishlist_icon);
+        ivCart=findViewById(R.id.cart_counter);
+
         mEtEmail=findViewById(R.id.etNameorEmail);
         mBtnContinue=findViewById(R.id.btnContinue1);
         mEtName=findViewById(R.id.etName);
