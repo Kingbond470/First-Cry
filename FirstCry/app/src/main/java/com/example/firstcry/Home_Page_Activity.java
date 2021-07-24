@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.SearchView;
 
 import com.google.android.material.slider.Slider;
 
@@ -14,6 +15,7 @@ import java.util.List;
 public class Home_Page_Activity extends AppCompatActivity {
 
     private ImageView ivCart;
+    private SearchView searchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,5 +35,6 @@ public class Home_Page_Activity extends AppCompatActivity {
 
     private void initViews() {
         ivCart=findViewById(R.id.ivCart);
+        searchView.findViewById(R.id.home_page_searchView);
     }
 }

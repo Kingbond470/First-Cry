@@ -22,27 +22,27 @@
             android:layout_marginLeft="10sp" />
         <ImageView
             android:layout_marginStart="140dp"
-            android:layout_width="40sp"
-            android:layout_height="40dp"
-            android:src="@drawable/heart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/wishlist_icon"
             android:layout_marginLeft="140dp" />
         <ImageView
             android:layout_marginStart="10sp"
-            android:layout_width="40sp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             app:srcCompat="@drawable/search"
             android:layout_marginLeft="10sp" />
-        <ImageView
+        <include
             android:layout_marginStart="10sp"
             android:layout_width="40sp"
             android:layout_height="40dp"
-            app:srcCompat="@drawable/notification"
+            layout="@layout/notification_icon_layout"
             android:layout_marginLeft="10sp" />
-        <ImageView
+        <include
             android:layout_marginStart="10sp"
             android:layout_width="40sp"
             android:layout_height="40dp"
-            app:srcCompat="@drawable/ic_baseline_shopping_cart_24"
+            layout="@layout/cart_icon_layout"
             android:layout_marginLeft="10sp" />
     </LinearLayout>
     <ScrollView
