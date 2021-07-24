@@ -30,11 +30,11 @@ public class MainActivity extends Activity {
         }
     }
 
-//    @Override
-//    public boolean onTouchEvent(MotionEvent event) {
-//        jump();
-//        return true;
-//    }
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        jump();
+        return true;
+    }
 
     private void jump() {
         if (isFinishing())
