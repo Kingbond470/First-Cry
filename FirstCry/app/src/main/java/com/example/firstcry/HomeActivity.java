@@ -11,10 +11,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.firstcry.Cart_Fragments.Cart_Items_Fragment;
 import com.example.firstcry.Shopping.Image_Model;
 import com.example.firstcry.Shopping.Model_Adapter;
 import com.google.android.material.navigation.NavigationView;
@@ -33,6 +36,7 @@ public class HomeActivity extends AppCompatActivity {
     androidx.appcompat.widget.Toolbar toolbar;
     RecyclerView recyclerView;
     ImageSlider imageSlider1;
+    private ImageView cartHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -160,5 +164,13 @@ public class HomeActivity extends AppCompatActivity {
         nav=findViewById(R.id.navmenu);
         toolbar=findViewById(R.id.toolbar);
         drawyer=findViewById(R.id.drawyer);
+        cartHome=findViewById(R.id.HomeCart);
+        cartHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(HomeActivity.this, Cart.class);
+                startActivity(intent);
+            }
+        });
     }
 }

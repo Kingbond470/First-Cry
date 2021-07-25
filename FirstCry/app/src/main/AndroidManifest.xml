@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/firstcry"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstCry">
-        <activity android:name=".Support"></activity>
+        <activity android:name=".ItemDetails"></activity>
+        <activity android:name=".Item_Show" />
+        <activity android:name=".Support" />
         <activity android:name=".Offer" />
         <activity android:name=".Wishlist" />
         <activity android:name=".Notification" />

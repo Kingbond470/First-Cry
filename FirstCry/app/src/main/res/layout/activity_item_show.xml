@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Cart">
-
+    tools:context=".Item_Show">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/relative_layout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
@@ -20,9 +22,20 @@
             android:layout_margin="10dp">
 
             <ImageView
+                android:id="@+id/menu_bar"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/menu_icon" />
+
+            <ImageView
+                android:id="@+id/firstCryLogo"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/menu_bar"
+                android:layout_toRightOf="@+id/menu_bar"
                 android:src="@drawable/firstcry_cart_logo"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,15 +51,21 @@
                 android:layout_toLeftOf="@+id/notification_counter"
                 app:srcCompat="@drawable/search" />
 
-            <include
+            <LinearLayout
                 android:id="@+id/notification_counter"
-                layout="@layout/notification_icon_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_toStartOf="@+id/iv_wishlist_icon"
-                android:layout_toLeftOf="@+id/iv_wishlist_icon" />
+                android:layout_toLeftOf="@+id/iv_wishlist_icon">
+
+                <include
+                    layout="@layout/notification_icon_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+
 
             <ImageView
                 android:id="@+id/iv_wishlist_icon"
@@ -60,46 +79,32 @@
                 android:layout_toLeftOf="@+id/cart_counter"
                 app:srcCompat="@drawable/wishlist_icon" />
 
-            <include
+            <LinearLayout
                 android:id="@+id/cart_counter"
-                layout="@layout/cart_icon_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                app:srcCompat="@drawable/cart_icon" />
+                android:layout_marginRight="10dp">
+
+                <include
+                    layout="@layout/cart_icon_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/cart_icon" />
+            </LinearLayout>
+
 
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
 
-
-    <RelativeLayout
-        android:id="@+id/RelativeLayoutView"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ItemRecyclerVIew"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="50dp">
-
-        <Button
-            android:id="@+id/cartToShopping"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:background="@color/pink"
-            android:paddingHorizontal="30dp"
-            android:text="Visit Shopping"
-            android:visibility="invisible"
-            android:textColor="@color/white" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/cartRecyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </RelativeLayout>
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>

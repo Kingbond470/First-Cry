@@ -183,17 +183,20 @@
             </LinearLayout>
 
             <EditText
+                android:id="@+id/contactMail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="165dp"
                 android:hint="EmailAddress"
                 />
             <EditText
+                android:id="@+id/contact91"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="91"
                 android:layout_marginTop="210dp"/>
             <EditText
+                android:id="@+id/contactPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="210dp"
@@ -209,6 +212,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginLeft="5dp" />
             <EditText
+                android:id="@+id/contactIssueType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="275dp"
@@ -223,6 +227,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginLeft="5dp" />
             <EditText
+                android:id="@+id/contactIssueDetails"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="335dp"
@@ -231,19 +236,21 @@
                 android:drawableRight="@drawable/ic_arrow_down" />
 
             <EditText
+                android:id="@+id/contactQuery"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginTop="395dp"
                 android:hint="Write your Query here"/>
             <Button
+                android:id="@+id/contactSumbit"
                 android:layout_width="110dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="610dp"
                 android:text="Submit"
-                android:layout_marginStart="120dp"
+                android:layout_marginStart="150dp"
                 android:background="#FF7F50"
                 android:textColor="@color/white"
-                android:layout_marginLeft="120dp" />
+                android:layout_marginLeft="150dp" />
 
         </androidx.cardview.widget.CardView>
 

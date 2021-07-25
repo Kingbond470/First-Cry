@@ -2,56 +2,60 @@
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawyer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
-    android:id="@+id/drawyer"
-    tools:openDrawer="start"
-    >
+    tools:openDrawer="start">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/relative"
-        >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/teal_700"
-            app:titleTextColor="@color/white"
             app:title=" "
-            >
+            app:titleTextColor="@color/white">
+
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="25dp"
-                android:src="@drawable/firstcry1"
-                />
+                android:src="@drawable/firstcry1" />
+
             <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_marginStart="70dp"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/heart"
-                android:layout_marginLeft="70dp" />
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/heart" />
+
             <ImageView
-                android:layout_marginStart="10sp"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                app:srcCompat="@drawable/search"
-                android:layout_marginLeft="10sp" />
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                app:srcCompat="@drawable/search" />
+
             <ImageView
-                android:layout_marginStart="10sp"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                app:srcCompat="@drawable/notification"
-                android:layout_marginLeft="10sp" />
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                app:srcCompat="@drawable/notification" />
+
             <ImageView
-                android:layout_marginStart="10sp"
+                android:id="@+id/HomeCart"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                app:srcCompat="@drawable/ic_baseline_shopping_cart_24"
-                android:layout_marginLeft="10sp" />
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
         </androidx.appcompat.widget.Toolbar>
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -62,216 +66,238 @@
                 android:layout_height="match_parent"
                 android:layout_below="@+id/linearTool"
                 android:orientation="vertical">
+
                 <com.denzcoskun.imageslider.ImageSlider
-                    android:layout_below="@+id/linearTool"
                     android:id="@+id/image_slider"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
-                    app:iss_auto_cycle="true"
-                    app:iss_period="1000"
-                    app:iss_delay="0"
+                    android:layout_below="@+id/linearTool"
                     android:layout_margin="10sp"
-                    />
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="0"
+                    app:iss_period="1000" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Shop by Category"
                     android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Shop by Category"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
                     android:textSize="15dp"
-                    android:layout_marginLeft="10dp" />
+                    android:textStyle="bold" />
+
                 <androidx.recyclerview.widget.RecyclerView
-                    android:layout_below="@+id/image_slider"
                     android:id="@+id/recycler1"
                     android:layout_width="match_parent"
                     android:layout_height="1700dp"
-                    android:text="Hello World!"
-                    android:layout_margin="5dp">
+                    android:layout_below="@+id/image_slider"
+                    android:layout_margin="5dp"
+                    android:text="Hello World!">
 
                 </androidx.recyclerview.widget.RecyclerView>
 
 
                 <com.denzcoskun.imageslider.ImageSlider
-                    android:layout_below="@+id/linearTool"
                     android:id="@+id/image_slider1"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
-                    app:iss_auto_cycle="true"
-                    app:iss_period="1000"
-                    app:iss_delay="0"
+                    android:layout_below="@+id/linearTool"
                     android:layout_margin="10sp"
-                    />
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="0"
+                    app:iss_period="1000" />
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:src="@drawable/banner">
 
                 </ImageView>
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:src="@drawable/babycare">
 
                 </ImageView>
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:src="@drawable/babyhug_toiletries">
 
                 </ImageView>
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:src="@drawable/hp_202178163531">
 
                 </ImageView>
+
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
-                    android:layout_height="200dp"
-                    >
+                    android:layout_height="200dp">
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
+
                         <ImageView
                             android:id="@+id/offer1"
                             android:layout_width="190dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/offer1"
+                            android:layout_margin="5dp"
                             android:background="@drawable/recycle_back"
-                            android:layout_margin="5dp"/>
+                            android:src="@drawable/offer1" />
+
                         <ImageView
                             android:id="@+id/offer2"
+                            android:layout_width="190dp"
+                            android:layout_height="200dp"
                             android:layout_margin="5dp"
                             android:layout_toEndOf="@+id/offer1"
-                            android:layout_width="190dp"
-                            android:layout_height="200dp"
-                            android:src="@drawable/offer2"
-                            android:layout_toRightOf="@+id/offer1" />
+                            android:layout_toRightOf="@+id/offer1"
+                            android:src="@drawable/offer2" />
+
                         <ImageView
                             android:id="@+id/offer3"
-                            android:layout_below="@+id/offer1"
                             android:layout_width="190dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/offer3"
-                            android:layout_margin="5dp"/>
+                            android:layout_below="@+id/offer1"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/offer3" />
+
                         <ImageView
                             android:id="@+id/offer4"
                             android:layout_width="190dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/offer4"
-                            android:layout_margin="5dp"
                             android:layout_below="@id/offer2"
+                            android:layout_margin="5dp"
                             android:layout_toEndOf="@id/offer3"
-                            android:layout_toRightOf="@id/offer3" />
+                            android:layout_toRightOf="@id/offer3"
+                            android:src="@drawable/offer4" />
+
                         <ImageView
                             android:id="@+id/offer5"
                             android:layout_width="190dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/offer5"
+                            android:layout_below="@id/offer3"
                             android:layout_margin="5dp"
-                            android:layout_below="@id/offer3"/>
+                            android:src="@drawable/offer5" />
+
                         <ImageView
                             android:id="@+id/offer6"
                             android:layout_width="190dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/offer6"
-                            android:layout_margin="5dp"
                             android:layout_below="@+id/offer4"
+                            android:layout_margin="5dp"
                             android:layout_toEndOf="@id/offer5"
-                            android:layout_toRightOf="@id/offer5" />
+                            android:layout_toRightOf="@id/offer5"
+                            android:src="@drawable/offer6" />
+
                         <ImageView
                             android:id="@+id/offer7"
                             android:layout_width="190dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/offer6"
+                            android:layout_below="@+id/offer5"
                             android:layout_margin="5dp"
-                            android:layout_below="@+id/offer5"/>
+                            android:src="@drawable/offer6" />
+
                         <ImageView
                             android:id="@+id/offer8"
                             android:layout_width="190dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/offer8"
-                            android:layout_margin="5dp"
                             android:layout_below="@+id/offer6"
+                            android:layout_margin="5dp"
                             android:layout_toEndOf="@+id/offer7"
-                            android:layout_toRightOf="@+id/offer7" />
+                            android:layout_toRightOf="@+id/offer7"
+                            android:src="@drawable/offer8" />
+
                         <ImageView
                             android:id="@+id/offer9"
                             android:layout_width="190dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/offer1"
-                            android:background="@drawable/recycle_back"
+                            android:layout_below="@id/offer7"
                             android:layout_margin="5dp"
-                            android:layout_below="@id/offer7"/>
+                            android:background="@drawable/recycle_back"
+                            android:src="@drawable/offer1" />
+
                         <ImageView
                             android:id="@+id/offer10"
+                            android:layout_width="190dp"
+                            android:layout_height="200dp"
+                            android:layout_below="@id/offer8"
                             android:layout_margin="5dp"
                             android:layout_toEndOf="@+id/offer9"
-                            android:layout_width="190dp"
-                            android:layout_height="200dp"
-                            android:src="@drawable/offer2"
-                            android:layout_below="@id/offer8"
-                            android:layout_toRightOf="@+id/offer9" />
+                            android:layout_toRightOf="@+id/offer9"
+                            android:src="@drawable/offer2" />
+
                         <ImageView
                             android:id="@+id/offer11"
-                            android:layout_below="@+id/offer9"
                             android:layout_width="190dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/offer3"
-                            android:layout_margin="5dp"/>
+                            android:layout_below="@+id/offer9"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/offer3" />
+
                         <ImageView
                             android:id="@+id/offer12"
                             android:layout_width="190dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/offer4"
-                            android:layout_margin="5dp"
                             android:layout_below="@id/offer10"
+                            android:layout_margin="5dp"
                             android:layout_toEndOf="@id/offer3"
-                            android:layout_toRightOf="@id/offer3" />
+                            android:layout_toRightOf="@id/offer3"
+                            android:src="@drawable/offer4" />
+
                         <ImageView
                             android:id="@+id/offer13"
                             android:layout_width="190dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/offer5"
+                            android:layout_below="@id/offer11"
                             android:layout_margin="5dp"
-                            android:layout_below="@id/offer11"/>
+                            android:src="@drawable/offer5" />
+
                         <ImageView
                             android:id="@+id/offer14"
                             android:layout_width="190dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/offer6"
-                            android:layout_margin="5dp"
                             android:layout_below="@+id/offer12"
+                            android:layout_margin="5dp"
                             android:layout_toEndOf="@id/offer5"
-                            android:layout_toRightOf="@id/offer5" />
+                            android:layout_toRightOf="@id/offer5"
+                            android:src="@drawable/offer6" />
+
                         <ImageView
                             android:id="@+id/offer15"
                             android:layout_width="190dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/offer6"
+                            android:layout_below="@+id/offer13"
                             android:layout_margin="5dp"
-                            android:layout_below="@+id/offer13"/>
+                            android:src="@drawable/offer6" />
+
                         <ImageView
                             android:id="@+id/offer16"
                             android:layout_width="190dp"
                             android:layout_height="200dp"
-                            android:src="@drawable/offer8"
-                            android:layout_margin="5dp"
                             android:layout_below="@+id/offer14"
+                            android:layout_margin="5dp"
                             android:layout_toEndOf="@+id/offer7"
-                            android:layout_toRightOf="@+id/offer7" />
+                            android:layout_toRightOf="@+id/offer7"
+                            android:src="@drawable/offer8" />
                     </LinearLayout>
                 </HorizontalScrollView>
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>
+
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navmenu"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/navmenu"
-        app:menu="@menu/iconmenu"
-        app:headerLayout="@layout/nav_header"
         android:layout_gravity="start"
-        />
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/iconmenu" />
 </androidx.drawerlayout.widget.DrawerLayout>
