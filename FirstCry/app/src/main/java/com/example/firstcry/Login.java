@@ -25,7 +25,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class Login extends AppCompatActivity {
 
-    private ImageView ivMenuBar, ivWishlist;
+    private ImageView ivMenuBar, ivWishlist,firstCryLogo;
     private LinearLayout ivNotification, ivCart;
 
     private EditText mEtEmail;
@@ -67,7 +67,7 @@ public class Login extends AppCompatActivity {
         ivWishlist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Login.this, Cart.class);
+                Intent intent=new Intent(Login.this, Wishlist.class);
                 startActivity(intent);
             }
         });
@@ -84,6 +84,13 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Login.this, Cart.class);
+                startActivity(intent);
+            }
+        });
+        firstCryLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Login.this, HomeActivity.class);
                 startActivity(intent);
             }
         });
@@ -108,6 +115,7 @@ public class Login extends AppCompatActivity {
         ivNotification=findViewById(R.id.notification_counter);
         ivWishlist=findViewById(R.id.iv_wishlist_icon);
         ivCart=findViewById(R.id.cart_counter);
+        firstCryLogo=findViewById(R.id.firstCryLogo);
 
         mEtEmail=findViewById(R.id.etNameorEmail);
         mEtPassword=findViewById(R.id.etPassword);

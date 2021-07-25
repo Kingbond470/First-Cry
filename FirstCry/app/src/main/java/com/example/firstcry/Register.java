@@ -52,7 +52,7 @@ public class Register extends AppCompatActivity {
         ivWishlist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Register.this, Cart.class);
+                Intent intent=new Intent(Register.this, Wishlist.class);
                 startActivity(intent);
             }
         });

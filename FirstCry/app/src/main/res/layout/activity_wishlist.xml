@@ -6,12 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".Wishlist">
 
-    <TextView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Wishlist"
-        android:layout_gravity="center"
-        android:gravity="center"
-        />
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/shopping" />
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

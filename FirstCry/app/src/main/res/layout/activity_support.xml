@@ -16,6 +16,7 @@
             android:layout_height="50dp"
             android:background="#fdde6c" />
         <ImageView
+            android:id="@+id/backContact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/ic_arrow_down"
@@ -39,11 +40,6 @@
             android:layout_margin="15dp"
             android:layout_below="@+id/View1"
             >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
@@ -238,19 +234,27 @@
             <EditText
                 android:id="@+id/contactQuery"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="100dp"
                 android:layout_marginTop="395dp"
+                android:gravity="top|left"
                 android:hint="Write your Query here"/>
+
             <Button
                 android:id="@+id/contactSumbit"
                 android:layout_width="110dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="610dp"
+                android:layout_marginTop="580dp"
                 android:text="Submit"
-                android:layout_marginStart="150dp"
+                android:gravity="center"
                 android:background="#FF7F50"
-                android:textColor="@color/white"
-                android:layout_marginLeft="150dp" />
+                android:textColor="@color/white" />
+            <ImageView
+                android:id="@+id/ivSupport"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="640dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/support_help"/>
 
         </androidx.cardview.widget.CardView>
 

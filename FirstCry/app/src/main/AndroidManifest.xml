@@ -20,7 +20,9 @@
         <activity android:name=".Offer" />
         <activity android:name=".Wishlist" />
         <activity android:name=".Notification" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".HomeActivity" >
+
+        </activity>
         <activity android:name=".Cart" />
         <activity android:name=".Register" />
         <activity android:name=".Login" />

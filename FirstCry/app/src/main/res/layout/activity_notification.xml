@@ -20,6 +20,7 @@
             android:layout_margin="10dp">
 
             <ImageView
+                android:id="@+id/NotificationfirstCryLogo"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
@@ -38,15 +39,19 @@
                 android:layout_toLeftOf="@+id/notification_counter"
                 app:srcCompat="@drawable/search" />
 
-            <include
-                android:id="@+id/notification_counter"
-                layout="@layout/notification_icon_layout"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_toStartOf="@+id/iv_wishlist_icon"
-                android:layout_toLeftOf="@+id/iv_wishlist_icon" />
+                android:id="@+id/notification_counter"
+                android:layout_toLeftOf="@+id/iv_wishlist_icon">
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    layout="@layout/notification_icon_layout"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
 
             <ImageView
                 android:id="@+id/iv_wishlist_icon"
@@ -60,18 +65,22 @@
                 android:layout_toLeftOf="@+id/cart_counter"
                 app:srcCompat="@drawable/wishlist_icon" />
 
-            <include
-                android:id="@+id/cart_counter"
-                layout="@layout/cart_icon_layout"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:id="@+id/cart_counter"
                 android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_alignParentEnd="true"
-                app:srcCompat="@drawable/cart_icon"
-                android:layout_alignParentRight="true" />
-
+                >
+                <include
+                    layout="@layout/cart_icon_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/cart_icon" />
+            </LinearLayout>
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
