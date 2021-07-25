@@ -7,7 +7,7 @@
         android:icon="@drawable/notification"
         android:title="Notification"/>
     <item android:id="@+id/menu_offer"
-        android:icon="@drawable/offer"
+        android:icon="@drawable/offer_image"
         android:title="Offer"/>
     <item android:id="@+id/menu_favourite"
         android:icon="@drawable/favourite"
@@ -24,5 +24,8 @@
     <item android:id="@+id/menu_sell_with_us"
         android:icon="@drawable/sell_with_us"
         android:title="Sell With Us"/>
+    <item android:id="@+id/fashion"
+        android:icon="@drawable/sell_with_us"
+        android:title="Fashion"/>
 
 </menu>

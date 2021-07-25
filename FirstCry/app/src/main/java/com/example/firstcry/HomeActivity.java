@@ -88,6 +88,12 @@ public class HomeActivity extends AppCompatActivity {
                         drawyer.closeDrawer(GravityCompat.START);
                         break;
                     }
+                    case R.id.fashion:{
+                        Intent intent=new Intent(HomeActivity.this,Fashion.class);
+                        startActivity(intent);
+                        drawyer.closeDrawer(GravityCompat.START);
+                        break;
+                    }
 
                 }
                 return true;

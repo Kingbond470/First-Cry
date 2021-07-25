@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/firstcry"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstCry">
-        <activity android:name=".PaymentSuccessful"></activity>
+        <activity android:name=".Fashion"></activity>
+        <activity android:name=".PaymentSuccessful" />
         <activity android:name=".BuyDetails" />
         <activity android:name=".ItemDetails" />
         <activity android:name=".Item_Show" />
@@ -25,7 +26,7 @@
         <activity android:name=".Login" />
         <activity android:name=".AskUserActivity" />
         <activity android:name=".Home_Page_Activity" />
-        <activity android:name=".Parenting"></activity>
+        <activity android:name=".Parenting" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
