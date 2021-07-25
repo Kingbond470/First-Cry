@@ -38,13 +38,12 @@
                 android:layout_marginRight="10dp"
                 android:layout_toStartOf="@+id/notification_counter"
                 android:layout_toLeftOf="@+id/notification_counter"
-                app:srcCompat="@drawable/search"
-                app:tint="@color/white" />
+                app:srcCompat="@drawable/search" />
 
 
             <include
                 android:id="@+id/notification_counter"
-                layout="@layout/notification_icon_layout_2"
+                layout="@layout/notification_icon_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentEnd="true"

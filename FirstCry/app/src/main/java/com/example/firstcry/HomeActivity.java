@@ -82,6 +82,13 @@ public class HomeActivity extends AppCompatActivity {
                         drawyer.closeDrawer(GravityCompat.START);
                         break;
                     }
+                    case R.id.menu_favourite:{
+                        Intent intent=new Intent(HomeActivity.this,Parenting.class);
+                        startActivity(intent);
+                        drawyer.closeDrawer(GravityCompat.START);
+                        break;
+                    }
+
                 }
                 return true;
             }

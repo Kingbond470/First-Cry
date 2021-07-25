@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.view.WindowManager;
 
 import com.example.firstcry.Parenting_Fragments.Fragment_DocConnect;
 import com.example.firstcry.Parenting_Fragments.Fragment_Home;
@@ -38,6 +39,18 @@ public class Parenting extends AppCompatActivity {
         adapter.addFragment(new Fragment_Memories(), "MEMORIES");
         adapter.addFragment(new Fragment_VaccineAndGrowth(), "VACCINE & GROWTH");
         viewPager.setAdapter(adapter);
+
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.view_pager, new Fragment_Home()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.view_pager, new Fragment_Read()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.view_pager, new Fragment_DocConnect()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.view_pager, new Fragment_QandA()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.view_pager, new Fragment_Memories()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.view_pager, new Fragment_VaccineAndGrowth()).commit();
+
+
 
     }
 }

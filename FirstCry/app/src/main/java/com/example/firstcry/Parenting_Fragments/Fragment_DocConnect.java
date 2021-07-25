@@ -3,12 +3,18 @@ package com.example.firstcry.Parenting_Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.firstcry.Parenting_Fragments.Parenting_Recycler.HomeAdapter;
+import com.example.firstcry.Parenting_Fragments.Parenting_Recycler.HomeModel;
 import com.example.firstcry.R;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +31,10 @@ public class Fragment_DocConnect extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+
+    RecyclerView recyclerView;
+    ArrayList<HomeModel> homeModelArrayList;
 
     public Fragment_DocConnect() {
         // Required empty public constructor
@@ -61,6 +71,29 @@ public class Fragment_DocConnect extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment__doc_connect, container, false);
+        View view =  inflater.inflate(R.layout.fragment__doc_connect, container, false);
+
+
+        recyclerView = view.findViewById(R.id.recycler_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        homeModelArrayList = new ArrayList<>();
+
+        HomeModel ob1 = new HomeModel(R.drawable.recycler_image_1, "Headache after C-Section");
+        homeModelArrayList.add(ob1);
+
+        HomeModel ob2 = new HomeModel(R.drawable.recycler_image_1, "Headache after C-Section");
+        homeModelArrayList.add(ob2);
+
+        HomeModel ob3 = new HomeModel(R.drawable.recycler_image_1, "Headache after C-Section");
+        homeModelArrayList.add(ob3);
+
+        HomeModel ob4 = new HomeModel(R.drawable.recycler_image_1, "Headache after C-Section");
+        homeModelArrayList.add(ob4);
+
+        recyclerView.setAdapter(new HomeAdapter(homeModelArrayList));
+
+
+        return view;
     }
 }

@@ -25,7 +25,7 @@
         <activity android:name=".Login" />
         <activity android:name=".AskUserActivity" />
         <activity android:name=".Home_Page_Activity" />
-        <activity android:name=".Parenting" />
+        <activity android:name=".Parenting"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

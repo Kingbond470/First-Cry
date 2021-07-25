@@ -1,14 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3BA6A6A6"
     tools:context=".Parenting_Fragments.Fragment_Read">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontal_scroll_view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/parenting_home_scroll_view_1" />
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/parenting_home_scroll_view_1" />
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/parenting_home_scroll_view_1" />
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/parenting_home_scroll_view_1" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontal_scroll_view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_below="@+id/horizontal_scroll_view_1"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/parenting_home_scroll_view_1" />
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/parenting_home_scroll_view_1" />
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/parenting_home_scroll_view_1" />
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/parenting_home_scroll_view_1" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontal_scroll_view_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_below="@+id/horizontal_scroll_view_2"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/parenting_home_scroll_view_1" />
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/parenting_home_scroll_view_1" />
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/parenting_home_scroll_view_1" />
+
+                        <ImageView
+                            android:layout_width="350dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/parenting_home_scroll_view_1" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/horizontal_scroll_view_3"
+                    android:layout_margin="10dp"
+                    android:background="#3BA6A6A6"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+
+</ScrollView>
