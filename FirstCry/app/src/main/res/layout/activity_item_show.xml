@@ -104,6 +104,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/ItemRecyclerVIew"
         android:layout_width="match_parent"
+        android:layout_margin="10dp"
         android:layout_height="wrap_content" />
 
 

@@ -17,7 +17,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_700"
+            android:background="#61FF3385"
             app:title=" "
             app:titleTextColor="@color/white">
 
@@ -27,13 +27,15 @@
                 android:src="@drawable/firstcry1" />
 
             <ImageView
+                android:id="@+id/homeWish"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="70dp"
                 android:layout_marginLeft="70dp"
-                android:src="@drawable/heart" />
+                app:srcCompat="@drawable/wishlist_icon" />
 
             <ImageView
+                android:id="@+id/homeSearch"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="10sp"
@@ -41,11 +43,12 @@
                 app:srcCompat="@drawable/search" />
 
             <ImageView
+                android:id="@+id/HomeNotification"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="10sp"
                 android:layout_marginLeft="10sp"
-                app:srcCompat="@drawable/notification" />
+                app:srcCompat="@drawable/notification_icon" />
 
             <ImageView
                 android:id="@+id/HomeCart"
@@ -53,7 +56,7 @@
                 android:layout_height="25dp"
                 android:layout_marginStart="10sp"
                 android:layout_marginLeft="10sp"
-                app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+                app:srcCompat="@drawable/cart_icon" />
         </androidx.appcompat.widget.Toolbar>
 
         <ScrollView
@@ -299,5 +302,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
+        android:background="#C4FF3385"
         app:menu="@menu/iconmenu" />
 </androidx.drawerlayout.widget.DrawerLayout>

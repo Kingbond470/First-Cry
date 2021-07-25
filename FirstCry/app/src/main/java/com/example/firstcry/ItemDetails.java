@@ -2,6 +2,7 @@ package com.example.firstcry;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -36,6 +37,16 @@ public class ItemDetails extends AppCompatActivity {
                 Cart_Items_Fragment.itemList.add(itemModel);
 
 
+            }
+        });
+
+        buyNow=findViewById(R.id.buyNow);
+        buyNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ItemDetails.this,"Enter Details",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(ItemDetails.this,BuyDetails.class);
+                startActivity(intent);
             }
         });
     }

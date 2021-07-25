@@ -38,6 +38,8 @@ public class HomeActivity extends AppCompatActivity {
     ImageSlider imageSlider1;
     private ImageView cartHome;
 
+    private ImageView homeAccount, homeSearch, homeNotification, homeCart, homeWish;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -165,10 +167,30 @@ public class HomeActivity extends AppCompatActivity {
         toolbar=findViewById(R.id.toolbar);
         drawyer=findViewById(R.id.drawyer);
         cartHome=findViewById(R.id.HomeCart);
+        homeNotification=findViewById(R.id.HomeNotification);
+        homeSearch=findViewById(R.id.homeSearch);
+        homeWish=findViewById(R.id.homeWish);
+
         cartHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(HomeActivity.this, Cart.class);
+                startActivity(intent);
+            }
+        });
+
+        homeNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(HomeActivity.this, Notification.class);
+                startActivity(intent);
+            }
+        });
+
+        homeWish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(HomeActivity.this, Wishlist.class);
                 startActivity(intent);
             }
         });
