@@ -2,6 +2,7 @@ package com.example.firstcry.Shopping;
 
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -10,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.firstcry.R;
 
 public class Model_Holder extends RecyclerView.ViewHolder{
-    private ImageButton mImgBtn;
+    private ImageView mImgBtn;
     private TextView mTvCat;
     public Model_Holder(@NonNull View itemView) {
         super(itemView);

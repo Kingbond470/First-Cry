@@ -8,10 +8,11 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
+        android:id="@+id/cardRelativeLayout"
         android:layout_height="wrap_content">
 
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imgImage"
             android:layout_width="377dp"
             android:layout_height="200dp"
