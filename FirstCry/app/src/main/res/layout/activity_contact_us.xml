@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUs">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/pink">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/firstCryParenting"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/firstcry_parenting_logo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-7dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/notification_counter"
+                android:layout_toLeftOf="@+id/notification_counter"
+                app:srcCompat="@drawable/search" />
+
+
+            <include
+                android:id="@+id/notification_counter"
+                layout="@layout/notification_icon_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative_layout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFC107"
+                    android:padding="15dp"
+                    android:text="CONTACT US"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#11A6A6A6"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="10dp"
+                        app:cardBackgroundColor="#EBFFEC47">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:id="@+id/iv_warning"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_above="@id/operations"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/warning" />
+
+                            <TextView
+                                android:id="@+id/tv_dear_customer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_toRightOf="@+id/iv_warning"
+                                android:lines="3"
+                                android:paddingLeft="10dp"
+                                android:text="Dear Customer,\nDue to the unprecedented spike of COVID-19 cases across the country, our COntact Centre"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/operations"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_dear_customer"
+                                android:lines="1"
+                                android:text="operations have been impacted."
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/we_are"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_dear_customer"
+                                android:layout_toRightOf="@id/operations"
+                                android:lines="1"
+                                android:text=" We are therefore"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/compelled"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/operations"
+                                android:lines="1"
+                                android:text="compelled to halt our operations till the situation"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/normalizes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/compelled"
+                                android:lines="1"
+                                android:text="normalizes."
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/however"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/compelled"
+                                android:layout_toRightOf="@+id/normalizes"
+                                android:lines="1"
+                                android:text=" However, we would continue to provide"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/support_for"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/normalizes"
+                                android:lines="1"
+                                android:text="support for your concerns over Emails."
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/Though"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/support_for"
+                                android:layout_marginVertical="20dp"
+                                android:lines="4"
+                                android:text="Though our endeavor would be to respond as quickly as\npossible, but please do allow us to revert in 24-48 hours.\nFor any further assistance please feel free to reach out to\nus via below mentioned options."
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/dipatch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/Though"
+                                android:lines="1"
+                                android:text="Dispatch of orders from our end as well as Deliveries"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/have"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/dipatch"
+                                android:lines="3"
+                                android:text="have also been severly hampered during the last few weeks and may continue for some more time. As such, we seek your cooperation in alowing us time extensions."
+                                android:textColor="@color/black" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="20dp"
+                        android:elevation="2dp"
+                        app:cardBackgroundColor="@color/grey"
+                        app:cardCornerRadius="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="@color/white"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:id="@+id/iv_manage_your_order"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/support_manage_order" />
+
+                            <TextView
+                                android:id="@+id/tv_manage_order"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="5dp"
+                                android:layout_toRightOf="@id/iv_manage_your_order"
+                                android:text="Manage your order"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_manage_order"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@id/iv_manage_your_order"
+                                android:text="Track, Return, Cancel, View order details"
+                                android:textColor="@color/dark_grey" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="40dp"
+                        android:elevation="2dp"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_order_information"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/support_order_information" />
+
+                                <TextView
+                                    android:id="@+id/tv_order_information"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@id/iv_order_information"
+                                    android:text="Order Information"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_order_information"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_order_information"
+                                    android:text="Check Status"
+                                    android:textColor="@color/dark_grey" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/right_arrow_icon" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_return_and_replacement"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/support_return_and_replacement" />
+
+                                <TextView
+                                    android:id="@+id/tv_return_and_replacement"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@id/iv_return_and_replacement"
+                                    android:text="Return and Replacement"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_return_and_replacement"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_return_and_replacement"
+                                    android:text="Raise request/ Check Status"
+                                    android:textColor="@color/dark_grey" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/right_arrow_icon" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_delivery_pickup"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="10dp"
+                                    android:scaleX="-1"
+                                    android:src="@drawable/support_delivery_pickup" />
+
+                                <TextView
+                                    android:id="@+id/tv_delivery_pickup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@id/iv_delivery_pickup"
+                                    android:text="Return and Replacement"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_delivery_pickup"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_delivery_pickup"
+                                    android:text="Track Order/ Reverse Pick-up"
+                                    android:textColor="@color/dark_grey" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/right_arrow_icon" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_cancellation_modify"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/support_cancellation_modify" />
+
+                                <TextView
+                                    android:id="@+id/tv_cancellation_modify"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@id/iv_cancellation_modify"
+                                    android:text="Delivery / Pickup"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_cancellation_modify"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_cancellation_modify"
+                                    android:text="Modify/ Cancel Order"
+                                    android:textColor="@color/dark_grey" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/right_arrow_icon" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_refunds"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/support_refunds" />
+
+                                <TextView
+                                    android:id="@+id/tv_refunds"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@id/iv_refunds"
+                                    android:text="Refunds"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_refunds"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toRightOf="@id/iv_refunds"
+                                    android:text="Check Refund Status"
+                                    android:textColor="@color/dark_grey" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/right_arrow_icon" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_manage_your_account"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:src="@drawable/support_manage_your_account" />
+
+                                <TextView
+                                    android:id="@+id/tv_manage_your_account"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@id/iv_manage_your_account"
+                                    android:text="Manage Your Account"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/right_arrow_icon" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_other_queries"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:src="@drawable/support_other_queries" />
+
+                                <TextView
+                                    android:id="@+id/tv_other_queries"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@id/iv_other_queries"
+                                    android:text="Other Queries"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/right_arrow_icon" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_business_supplier_tie_up"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:src="@drawable/support_business_supplier_tie_up" />
+
+                                <TextView
+                                    android:id="@+id/tv_business_supplier_tie_up"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@id/iv_business_supplier_tie_up"
+                                    android:text="Business / Supplier Tie Up"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/right_arrow_icon" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_margin="5dp"
+                                android:background="@color/grey" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_contact_details"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:src="@drawable/support_contact_details" />
+
+                                <TextView
+                                    android:id="@+id/tv_contact_details"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@id/iv_contact_details"
+                                    android:text="Contact Details"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/right_arrow_icon" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:elevation="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="100dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="2dp"
+                android:clickable="true"
+                android:elevation="20dp"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/support_hover_assistant" />
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</RelativeLayout>

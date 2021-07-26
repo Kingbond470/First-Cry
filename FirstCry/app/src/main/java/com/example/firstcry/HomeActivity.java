@@ -95,6 +95,13 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     }
 
+                    case R.id.contactUs:{
+                        Intent intent=new Intent(HomeActivity.this,ContactUs.class);
+                        startActivity(intent);
+                        drawyer.closeDrawer(GravityCompat.START);
+                        break;
+                    }
+
                 }
                 return true;
             }

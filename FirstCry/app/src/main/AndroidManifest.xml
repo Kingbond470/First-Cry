@@ -11,8 +11,11 @@
         android:roundIcon="@mipmap/firstcry"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstCry">
-        <activity android:name=".Fashion"></activity>
-        <activity android:name=".PaymentSuccessful" />
+        <activity android:name=".ContactUs"></activity>
+        <activity android:name=".Fashion" />
+        <activity android:name=".PaymentSuccessful">
+
+        </activity>
         <activity android:name=".BuyDetails" />
         <activity android:name=".ItemDetails" />
         <activity android:name=".Item_Show" />
@@ -20,7 +23,7 @@
         <activity android:name=".Offer" />
         <activity android:name=".Wishlist" />
         <activity android:name=".Notification" />
-        <activity android:name=".HomeActivity" >
+        <activity android:name=".HomeActivity">
 
         </activity>
         <activity android:name=".Cart" />

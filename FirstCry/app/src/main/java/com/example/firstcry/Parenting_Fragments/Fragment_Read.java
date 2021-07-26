@@ -79,10 +79,10 @@ public class Fragment_Read extends Fragment {
         HomeModel ob1 = new HomeModel(R.drawable.recycler_image_1, "Headache after C-Section");
         homeModelArrayList.add(ob1);
 
-        HomeModel ob2 = new HomeModel(R.drawable.recycler_image_1, "Headache after C-Section");
+        HomeModel ob2 = new HomeModel(R.drawable.parenting1, "Art to Creativity");
         homeModelArrayList.add(ob2);
 
-        HomeModel ob3 = new HomeModel(R.drawable.recycler_image_1, "Headache after C-Section");
+        HomeModel ob3 = new HomeModel(R.drawable.recycler_image_1, "Read about Pregnancy");
         homeModelArrayList.add(ob3);
 
         HomeModel ob4 = new HomeModel(R.drawable.recycler_image_1, "Headache after C-Section");

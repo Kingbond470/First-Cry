@@ -51,6 +51,10 @@ public class Fragment_Home extends Fragment {
         for (int i = 1; i < 10; i++) {
             HomeModel ob1 = new HomeModel(R.drawable.recycler_image_1, "Headache after C-Section");
             homeModelArrayList.add(ob1);
+            HomeModel ob2 = new HomeModel(R.drawable.parenting1, "Art to Creativity");
+            homeModelArrayList.add(ob2);
+            HomeModel ob3 = new HomeModel(R.drawable.parentign2, "Read about Pregnancy");
+            homeModelArrayList.add(ob3);
         }
 
 
