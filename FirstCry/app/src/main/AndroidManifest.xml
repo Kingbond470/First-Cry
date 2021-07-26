@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/firstcry"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstCry">
-        <activity android:name=".ContactUs"></activity>
+        <activity android:name=".ContactUs">
+
+        </activity>
         <activity android:name=".Fashion" />
         <activity android:name=".PaymentSuccessful">
 
