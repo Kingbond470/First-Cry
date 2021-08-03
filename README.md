@@ -7,4 +7,4 @@
  
  Landing Page
  
- ![Landing Page](FirstCryImage/LandingPage.jpg) ![Register Page](FirstCryImage/RegisterPage.jpg)
+ ![Landing Page](FirstCryImage/LandingPage.jpg)                              ![Register Page](FirstCryImage/RegisterPage.jpg)
