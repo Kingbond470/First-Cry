@@ -21,18 +21,21 @@
  
  ![Menu_bar](FirstCryImage/MenuBar.jpg)
  
- Order Cart
  
- ![Order_cart](FirstCryImage/Cart.jpg)
+ <table>
+  <tr>
+    <td>Order Cart</td>
+     <td>Notification</td>
+     <td>Wishlist/Favourite</td>
+  </tr>
+  <tr>
+    <td><img src="FirstCryImage/Cart.jpg"></td>
+    <td><img src="FirstCryImage/Notification.jpg"></td>
+    <td><img src="FirstCryImage/Wishlist.jpg"></td>
+  </tr>
+ </table>
  
- Notification 
- 
- ![Notification](FirstCryImage/Notification.jpg)
- 
- Wishlist
- 
- ![Wishlist](FirstCryImage/Wishlist.jpg)
- 
+
  Item List
  
  ![Item_list](FirstCryImage/Item_Show.jpg) 
