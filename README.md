@@ -9,13 +9,18 @@
  
  ![Landing Page](FirstCryImage/LandingPage.jpg)                              
  
- Register
  
- ![Register Page](FirstCryImage/RegisterPage.jpg)
- 
- Login
- 
- ![Login Page](FirstCryImage/LoginPage.jpg)
+ <table>
+  <tr>
+    <td>Register User</td>
+     <td>Login User</td>
+  </tr>
+  <tr>
+    <td><img src="FirstCryImage/RegisterPage.jpg"></td>
+    <td><img src="FirstCryImage/LoginPage.jpg"></td>
+  </tr>
+ </table>
+
  
  Home - Menu bar
  
@@ -38,8 +43,17 @@
 
  Item List
  
- ![Item_list](FirstCryImage/Item_Show.jpg) 
- ![Item_list2](FirstCryImage/Item_show2.jpg)
+  <table>
+  <tr>
+    <td>Item List 1</td>
+   <td>Item List 2</td>
+  </tr>
+  <tr>
+    <td><img src="FirstCryImage/Item_Show.jpg"></td>
+    <td><img src="FirstCryImage/Item_show2.jpg"></td>
+  </tr>
+ </table>
+
  
  Item Details
  
