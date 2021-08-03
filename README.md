@@ -62,3 +62,19 @@
  Payment Details
  
  ![Payment_Details](FirstCryImage/PaymentDetails.jpg)
+
+
+
+Technologies
+
+    Java
+    Glide
+    Recycler View
+    Fragments
+    Scroll View
+    Navigation Drawer
+    Shared Preferences
+    XML
+    Firebase
+    TabLayout
+    
