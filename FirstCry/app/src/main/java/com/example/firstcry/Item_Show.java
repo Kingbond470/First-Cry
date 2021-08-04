@@ -7,6 +7,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.firstcry.ItemShowRecyclerView.ItemAdapter;
@@ -20,6 +23,9 @@ public class Item_Show extends AppCompatActivity implements ItemOnClickListener 
     private RecyclerView recyclerView;
     private ArrayList<ItemModel> itemList=new ArrayList<>();
 
+    private ImageView ivWishlist, firstCryLogo;
+    private LinearLayout ivNotification, ivCart;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +33,38 @@ public class Item_Show extends AppCompatActivity implements ItemOnClickListener 
         initViews();
         setRecyclerView();
         itemBuildList();
+
+
+
+        ivWishlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Item_Show.this,Wishlist.class);
+                startActivity(intent);
+            }
+        });
+        firstCryLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Item_Show.this,HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+        ivCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Item_Show.this,Cart.class);
+                startActivity(intent);
+            }
+        });
+        ivNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Item_Show.this,Notification.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void itemBuildList() {
@@ -60,6 +98,10 @@ public class Item_Show extends AppCompatActivity implements ItemOnClickListener 
 
     private void initViews() {
         recyclerView=findViewById(R.id.ItemRecyclerVIew);
+        ivWishlist=findViewById(R.id.iv_wishlist_icon);
+        firstCryLogo=findViewById(R.id.firstCryLogo);
+        ivCart = findViewById(R.id.cart_counter);
+        ivNotification=findViewById(R.id.notification_counter);
     }
 
     @Override
@@ -74,4 +116,6 @@ public class Item_Show extends AppCompatActivity implements ItemOnClickListener 
         Intent intent=new Intent(Item_Show.this,ItemDetails.class);
         startActivity(intent);
     }
+
+
 }

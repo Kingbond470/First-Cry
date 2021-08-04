@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.firstcry.Cart_Fragments.Cart_Items_Fragment;
@@ -16,12 +18,20 @@ public class ItemDetails extends AppCompatActivity {
     private Button addToCart, buyNow;
 
 
+    private ImageView ivWishlist, firstCryLogo;
+    private LinearLayout ivNotification, ivCart;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_details);
         addToCart=findViewById(R.id.addToCart);
         buyNow=findViewById(R.id.buyNow);
+
+        ivWishlist=findViewById(R.id.iv_wishlist_icon);
+        firstCryLogo=findViewById(R.id.firstCryLogo);
+        ivCart = findViewById(R.id.cart_counter);
+        ivNotification=findViewById(R.id.notification_counter);
 
         addToCart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,5 +59,39 @@ public class ItemDetails extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
+
+
+        ivWishlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ItemDetails.this,Wishlist.class);
+                startActivity(intent);
+            }
+        });
+        firstCryLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ItemDetails.this,HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+        ivCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ItemDetails.this,Cart.class);
+                startActivity(intent);
+            }
+        });
+        ivNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ItemDetails.this,Notification.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

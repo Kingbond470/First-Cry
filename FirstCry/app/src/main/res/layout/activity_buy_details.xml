@@ -7,6 +7,8 @@
     android:orientation="vertical"
     tools:context=".BuyDetails">
 
+
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/linearLayoutCompat"
         android:layout_width="match_parent"

@@ -38,6 +38,7 @@ public class HomeActivity extends AppCompatActivity {
     ImageSlider imageSlider1;
     private ImageView cartHome;
 
+
     private ImageView homeAccount, homeSearch, homeNotification, homeCart, homeWish;
 
     @Override
@@ -191,6 +192,9 @@ public class HomeActivity extends AppCompatActivity {
         homeSearch=findViewById(R.id.homeSearch);
         homeWish=findViewById(R.id.homeWish);
 
+        homeAccount=findViewById(R.id.HomeAccount);
+
+
         cartHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -214,5 +218,8 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
     }
 }
