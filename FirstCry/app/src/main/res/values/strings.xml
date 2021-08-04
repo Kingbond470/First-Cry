@@ -10,4 +10,26 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Open">Open</string>
     <string name="Close">Close</string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="pincode">Pincode</string>
+    <string name="new_address">New Address</string>
+    <string name="house_no_apartment_name">House no., Apartment name</string>
+    <string name="road_area_locality">Road, Area, Locality</string>
+    <string name="add_nearby_shop_landmark">+ Add Nearby Shop/Landmark</string>
+    <string name="address_type">Address Type</string>
+    <string name="home">Home</string>
+    <string name="office">Office</string>
+    <string name="set_as_default_address">Set as Default Address</string>
+    <string name="contact_us">CONTACT US</string>
+    <string name="manage_your_order">Manage your order</string>
+    <string name="track_return_cancel_view_order_details">Track, Return, Cancel, View order details</string>
+    <string name="order_information">Order Information</string>
+    <string name="check_status">Check Status</string>
+    <string name="cute_walk_by_babyhug">Cute Walk by Babyhug</string>
+    <string name="monday_aug_2">Monday, Aug 2</string>
+    <string name="login_register">Login / Register</string>
+    <string name="email_id_mobile_no">Email ID / Mobile No.</string>
+    <string name="enter_your_email_id_or_mobile_no">Enter your Email ID or Mobile No.</string>
+    <string name="password">Password</string>
 </resources>

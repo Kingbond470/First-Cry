@@ -162,7 +162,7 @@
                 android:textAlignment="textEnd"
                 android:text="@string/already_registered"
                 android:textColor="@color/black"
-                android:textSize="15sp"
+                android:textSize="@dimen/sp_15"
                 android:gravity="end" />
 
             <TextView
@@ -173,7 +173,7 @@
                 android:focusable="true"
                 android:text="@string/sign_in"
                 android:textColor="#234FD3"
-                android:textSize="15sp" />
+                android:textSize="@dimen/sp_15" />
         </LinearLayout>
 
     </RelativeLayout>

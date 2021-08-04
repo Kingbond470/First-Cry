@@ -123,7 +123,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Cute Walk by Babyhug"
+                android:text="@string/cute_walk_by_babyhug"
                 android:textColor="@color/black"
                 android:textSize="23sp" />
 
@@ -177,7 +177,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="Monday, Aug 2"
+                    android:text="@string/monday_aug_2"
                     android:textColor="@color/black"
                     android:textSize="23sp" />
             </LinearLayout>

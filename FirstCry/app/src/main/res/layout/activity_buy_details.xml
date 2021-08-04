@@ -41,14 +41,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:hint="Full Name"
+            android:hint="@string/full_name"
             android:textColor="@color/black"
             android:textSize="18sp" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="Mobile Number"
+            android:text="@string/mobile_number"
             android:textColor="@color/pink"
             android:textSize="18sp" />
 
@@ -56,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:hint="Mobile Number"
+            android:hint="@string/mobile_number"
             android:textColor="@color/black"
             android:maxLength="10"
             android:textSize="18sp" />
@@ -65,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="Pincode"
+            android:text="@string/pincode"
             android:textColor="@color/pink"
             android:textSize="18sp" />
 
@@ -73,14 +73,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:hint="Pincode"
+            android:hint="@string/pincode"
             android:textColor="@color/black"
             android:textSize="18sp" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="New Address"
+            android:text="@string/new_address"
             android:textColor="@color/pink"
             android:textSize="18sp" />
 
@@ -88,7 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:hint="House no., Apartment name"
+            android:hint="@string/house_no_apartment_name"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -96,7 +96,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:hint="Road, Area, Locality"
+            android:hint="@string/road_area_locality"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -104,7 +104,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:text="+ Add Nearby Shop/Landmark"
+            android:text="@string/add_nearby_shop_landmark"
             android:textColor="@color/pink"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -112,7 +112,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Address Type"
+            android:text="@string/address_type"
             android:textColor="@color/pink"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -128,7 +128,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
                 android:onClick="onRadioButtonClicked"
-                android:text="Home"
+                android:text="@string/home"
                 android:textSize="16sp" />
 
             <RadioButton
@@ -136,7 +136,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onRadioButtonClicked"
-                android:text="Office"
+                android:text="@string/office"
                 android:textSize="16sp" />
 
         </RadioGroup>
@@ -156,7 +156,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Set as Default Address"
+        android:text="@string/set_as_default_address"
         app:layout_constraintEnd_toStartOf="@+id/linearLayoutCompat"
         app:layout_constraintStart_toEndOf="@+id/linearLayoutCompat"
         app:layout_constraintTop_toBottomOf="@id/view" />

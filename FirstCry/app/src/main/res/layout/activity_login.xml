@@ -110,7 +110,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login / Register"
+            android:text="@string/login_register"
             android:textColor="@color/black"
             android:textSize="22sp" />
 
@@ -118,7 +118,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:text="Email ID / Mobile No."
+            android:text="@string/email_id_mobile_no"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
@@ -128,7 +128,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/roboto_light"
-            android:hint="Enter your Email ID or Mobile No."
+            android:hint="@string/enter_your_email_id_or_mobile_no"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -136,7 +136,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Password"
+            android:text="@string/password"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="normal" />

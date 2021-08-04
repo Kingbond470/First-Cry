@@ -135,9 +135,9 @@ public class Login extends AppCompatActivity {
         String email=mEtEmail.getText().toString();
         String pass=mEtPassword.getText().toString();
         if(!email.matches(emailValidation))
-            mEtEmail.setError("Enter correct email");
-        else if(!pass.matches(emailValidation)&&pass.length()<8)
-            mEtPassword.setError("Enter Proper Password Format");
+            mEtEmail.setError("Invalild Email, Enter correct Email");
+        else if(!pass.matches(emailValidation) && pass.length()<8)
+            mEtPassword.setError("Password Length should be greater than 7");
         else {
             progressDialog.setMessage("Please wait...");
             progressDialog.setTitle("Login");
@@ -155,7 +155,9 @@ public class Login extends AppCompatActivity {
                     else
                     {
                         progressDialog.dismiss();
-                        Toast.makeText(Login.this,""+ task.getException(),Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(Login.this,"Login Unsuccessful"+ task.getException(),Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login.this,"Login Unsuccessful",Toast.LENGTH_SHORT).show();
+
                     }
                 }
             });

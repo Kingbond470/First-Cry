@@ -71,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:background="#FFC107"
                     android:padding="15dp"
-                    android:text="CONTACT US"
+                    android:text="@string/contact_us"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -234,7 +234,7 @@
                                 android:layout_alignParentTop="true"
                                 android:layout_margin="5dp"
                                 android:layout_toRightOf="@id/iv_manage_your_order"
-                                android:text="Manage your order"
+                                android:text="@string/manage_your_order"
                                 android:textColor="@color/black"
                                 android:textSize="15sp"
                                 android:textStyle="bold" />
@@ -245,7 +245,7 @@
                                 android:layout_below="@+id/tv_manage_order"
                                 android:layout_marginLeft="5dp"
                                 android:layout_toRightOf="@id/iv_manage_your_order"
-                                android:text="Track, Return, Cancel, View order details"
+                                android:text="@string/track_return_cancel_view_order_details"
                                 android:textColor="@color/dark_grey" />
 
                         </RelativeLayout>
@@ -284,7 +284,7 @@
                                     android:layout_alignParentTop="true"
                                     android:layout_margin="5dp"
                                     android:layout_toRightOf="@id/iv_order_information"
-                                    android:text="Order Information"
+                                    android:text="@string/order_information"
                                     android:textColor="@color/black"
                                     android:textSize="15sp"
                                     android:textStyle="bold" />
@@ -295,7 +295,7 @@
                                     android:layout_below="@+id/tv_order_information"
                                     android:layout_marginLeft="5dp"
                                     android:layout_toRightOf="@id/iv_order_information"
-                                    android:text="Check Status"
+                                    android:text="@string/check_status"
                                     android:textColor="@color/dark_grey" />
 
                                 <ImageView
