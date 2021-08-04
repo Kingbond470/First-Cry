@@ -77,4 +77,5 @@ Technologies
     XML
     Firebase
     TabLayout
+    ViewPager
     
