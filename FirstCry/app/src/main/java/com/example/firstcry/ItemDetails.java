@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.firstcry.Cart_Fragments.Cart_Items_Fragment;
@@ -21,6 +22,10 @@ public class ItemDetails extends AppCompatActivity {
     private ImageView ivWishlist, firstCryLogo;
     private LinearLayout ivNotification, ivCart;
 
+    private ImageView itemImage;
+    private TextView tvName, tvRuppes, ItemPrice, itemOff,day;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,21 +33,40 @@ public class ItemDetails extends AppCompatActivity {
         addToCart=findViewById(R.id.addToCart);
         buyNow=findViewById(R.id.buyNow);
 
+        itemImage=findViewById(R.id.itemImage);
+        tvName=findViewById(R.id.itemName);
+        tvRuppes=findViewById(R.id.tvRupees);
+        ItemPrice=findViewById(R.id.ItemPrice);
+        itemOff=findViewById(R.id.itemOff);
+        day=findViewById(R.id.day);
+
         ivWishlist=findViewById(R.id.iv_wishlist_icon);
         firstCryLogo=findViewById(R.id.firstCryLogo);
         ivCart = findViewById(R.id.cart_counter);
         ivNotification=findViewById(R.id.notification_counter);
 
+        setDetails();
+
+        int iamgeId=PrefernceHelper.getIntFromPreference(ItemDetails.this,"imageId");
+        String name=PrefernceHelper.getStringFromPreference(ItemDetails.this,"name");
+        String ogPrice=PrefernceHelper.getStringFromPreference(ItemDetails.this,"ogPrice");
+        String cutPrice=PrefernceHelper.getStringFromPreference(ItemDetails.this,"cutPrice");
+        String offPercent=PrefernceHelper.getStringFromPreference(ItemDetails.this,"offPercent");
+        String date=PrefernceHelper.getStringFromPreference(ItemDetails.this,"date");
+
+
+        itemImage.setImageResource(iamgeId);
+        tvName.setText(name);
+        tvRuppes.setText(ogPrice);
+        ItemPrice.setText(cutPrice);
+        itemOff.setText(offPercent);
+        day.setText(date);
+
         addToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(ItemDetails.this,"Added to Cart",Toast.LENGTH_SHORT).show();
-                    int iamgeId=PrefernceHelper.getIntFromPreference(ItemDetails.this,"imageId");
-                    String name=PrefernceHelper.getStringFromPreference(ItemDetails.this,"name");
-                    String ogPrice=PrefernceHelper.getStringFromPreference(ItemDetails.this,"ogPrice");
-                    String cutPrice=PrefernceHelper.getStringFromPreference(ItemDetails.this,"cutPrice");
-                    String offPercent=PrefernceHelper.getStringFromPreference(ItemDetails.this,"offPercent");
-                    String date=PrefernceHelper.getStringFromPreference(ItemDetails.this,"date");
+
                 ItemModel itemModel=new ItemModel(iamgeId,name,ogPrice,cutPrice,offPercent,date);
                 Cart_Items_Fragment.itemList.add(itemModel);
 
@@ -92,6 +116,20 @@ public class ItemDetails extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+    }
+
+    private void setDetails() {
+//
+//        private ImageView itemImage;
+//        private TextView tvName, tvRuppes, ItemPrice, itemOff,day;
+//        int iamgeId=PrefernceHelper.getIntFromPreference(ItemDetails.this,"imageId");
+//        String name=PrefernceHelper.getStringFromPreference(ItemDetails.this,"name");
+//        String ogPrice=PrefernceHelper.getStringFromPreference(ItemDetails.this,"ogPrice");
+//        String cutPrice=PrefernceHelper.getStringFromPreference(ItemDetails.this,"cutPrice");
+//        String offPercent=PrefernceHelper.getStringFromPreference(ItemDetails.this,"offPercent");
+//        String date=PrefernceHelper.getStringFromPreference(ItemDetails.this,"date");
+
 
     }
 }
