@@ -9,15 +9,15 @@ import android.widget.ImageView;
 
 public class Offer extends AppCompatActivity {
 
-    private ImageView itemImage1, itemImage2, itemImage3, itemImage4, itemImage5,itemImage6, itemImage7, itemImage8;
-    private ImageView itemImage9, itemImage10, itemImage11, itemImage12, itemImage13, itemImage14, itemImage15, itemImage16;
+    private ImageView ivItemImageOne, ivItemImageTwo, ivItemImageThree, ivItemImageFour, ivItemImageFive,ivItemImageSix, ivItemImageSeven, ivItemImageEight;
+    private ImageView ivItemImageNine, ivItemImageTen, ivItemImageEleven, ivItemImageTweleve, ivItemImageThirteen, ivItemImageFourteen, ivItemImageSixteen, ivItemImageSeventeen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_offer);
-        itemImage1=findViewById(R.id.offer1);
-        itemImage1.setOnClickListener(new View.OnClickListener() {
+        ivItemImageOne=findViewById(R.id.offer1);
+        ivItemImageOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -26,8 +26,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //2
-        itemImage2=findViewById(R.id.offer2);
-        itemImage2.setOnClickListener(new View.OnClickListener() {
+        ivItemImageTwo=findViewById(R.id.offer2);
+        ivItemImageTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -36,8 +36,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //3
-        itemImage3=findViewById(R.id.offer3);
-        itemImage3.setOnClickListener(new View.OnClickListener() {
+        ivItemImageThree=findViewById(R.id.offer3);
+        ivItemImageThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -46,8 +46,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //4
-        itemImage4=findViewById(R.id.offer4);
-        itemImage4.setOnClickListener(new View.OnClickListener() {
+        ivItemImageFour=findViewById(R.id.offer4);
+        ivItemImageFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -56,8 +56,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //5
-        itemImage5=findViewById(R.id.offer5);
-        itemImage5.setOnClickListener(new View.OnClickListener() {
+        ivItemImageFive=findViewById(R.id.offer5);
+        ivItemImageFive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -66,8 +66,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //6
-        itemImage6=findViewById(R.id.offer6);
-        itemImage6.setOnClickListener(new View.OnClickListener() {
+        ivItemImageSix=findViewById(R.id.offer6);
+        ivItemImageSix.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -76,8 +76,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //7
-        itemImage7=findViewById(R.id.offer7);
-        itemImage7.setOnClickListener(new View.OnClickListener() {
+        ivItemImageSeven=findViewById(R.id.offer7);
+        ivItemImageSeven.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -86,8 +86,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //8
-        itemImage8=findViewById(R.id.offer8);
-        itemImage8.setOnClickListener(new View.OnClickListener() {
+        ivItemImageEight=findViewById(R.id.offer8);
+        ivItemImageEight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -96,8 +96,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //9
-        itemImage9=findViewById(R.id.offer9);
-        itemImage9.setOnClickListener(new View.OnClickListener() {
+        ivItemImageNine=findViewById(R.id.offer9);
+        ivItemImageNine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -106,8 +106,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //10
-        itemImage10=findViewById(R.id.offer10);
-        itemImage10.setOnClickListener(new View.OnClickListener() {
+        ivItemImageTen=findViewById(R.id.offer10);
+        ivItemImageTen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -116,8 +116,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //11
-        itemImage11=findViewById(R.id.offer11);
-        itemImage11.setOnClickListener(new View.OnClickListener() {
+        ivItemImageEleven=findViewById(R.id.offer11);
+        ivItemImageEleven.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -126,8 +126,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //12
-        itemImage12=findViewById(R.id.offer12);
-        itemImage12.setOnClickListener(new View.OnClickListener() {
+        ivItemImageTweleve=findViewById(R.id.offer12);
+        ivItemImageTweleve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -136,8 +136,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //13
-        itemImage13=findViewById(R.id.offer13);
-        itemImage13.setOnClickListener(new View.OnClickListener() {
+        ivItemImageThirteen=findViewById(R.id.offer13);
+        ivItemImageThirteen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -146,8 +146,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //14
-        itemImage14=findViewById(R.id.offer14);
-        itemImage14.setOnClickListener(new View.OnClickListener() {
+        ivItemImageFourteen=findViewById(R.id.offer14);
+        ivItemImageFourteen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -156,8 +156,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //15
-        itemImage15=findViewById(R.id.offer15);
-        itemImage15.setOnClickListener(new View.OnClickListener() {
+        ivItemImageSixteen=findViewById(R.id.offer15);
+        ivItemImageSixteen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
@@ -166,8 +166,8 @@ public class Offer extends AppCompatActivity {
         });
 
         //16
-        itemImage16=findViewById(R.id.offer16);
-        itemImage16.setOnClickListener(new View.OnClickListener() {
+        ivItemImageSeventeen=findViewById(R.id.offer16);
+        ivItemImageSeventeen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Offer.this,Item_Show.class);
