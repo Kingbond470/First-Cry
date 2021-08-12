@@ -1,9 +1,10 @@
 # First-Cry
  
- Clone Android App
+ ## Clone of First Cry Android Application
 
-This is a clone Android App of First - Cry which is a India's Largest Online Store for newborn, baby &amp; kids products.
-Building the Sample App
+This is a clone of First Cry Android Application which is a India's Largest Online Store for newborn, baby &amp; kids products.
+
+### Building the Sample App
 
 First, clone the repo:
 You can use any one of the way to do it.
@@ -44,11 +45,10 @@ Gradle
 
     Install the debug APK on your device ./gradlew installDebug
     Start the APK: 
-
  
- Blog inspired from this project.
+ Splash Screen
  
- [Learning from Project](https://kingbond470.hashnode.dev/i-wanted-to-become-a-programmer-but-fail-what-i-learned-or-a-story-of-learning-android-development)
+ <img src="https://github.com/Kingbond470/First-Cry/blob/main/FirstCryImage/splash_screen.gif" width="280" />
  
  Landing Page
  
@@ -66,10 +66,18 @@ Gradle
   </tr>
  </table>
 
+ Home - Dashboard
+ 
+ <img src="https://github.com/Kingbond470/First-Cry/blob/main/FirstCryImage/home_dashboard.gif" width="280" />
+
  
  Home - Menu bar
  
  ![Menu_bar](FirstCryImage/MenuBar.jpg)
+ 
+ Fashion Page
+ 
+ <img src="https://github.com/Kingbond470/First-Cry/blob/main/FirstCryImage/fashion_home.gif" width="280" />
  
  
  <table>
@@ -107,6 +115,16 @@ Gradle
  Payment Details
  
  ![Payment_Details](FirstCryImage/PaymentDetails.jpg)
+ 
+ Parenting Dashboard
+ 
+ <img src="https://github.com/Kingbond470/First-Cry/blob/main/FirstCryImage/parenting.gif" width="280" />
+
+ 
+ Contact Us page
+ 
+  <img src="https://github.com/Kingbond470/First-Cry/blob/main/FirstCryImage/contact_us_parenting.gif" width="280" />
+
 
 
 
@@ -124,3 +142,10 @@ Technologies
     TabLayout
     ViewPager
     
+    
+
+
+ 
+ Blog related to Project
+ 
+ [Learning from Project](https://kingbond470.hashnode.dev/i-wanted-to-become-a-programmer-but-fail-what-i-learned-or-a-story-of-learning-android-development)
