@@ -17,7 +17,6 @@ import android.widget.ImageView;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
-import com.example.firstcry.Cart_Fragments.Cart_Items_Fragment;
 import com.example.firstcry.Shopping.Image_Model;
 import com.example.firstcry.Shopping.Model_Adapter;
 import com.google.android.material.navigation.NavigationView;
@@ -127,7 +126,7 @@ public class HomeActivity extends AppCompatActivity {
             }
             else if(i%10==1)
             {
-                Image_Model model=new Image_Model(R.drawable.cat2,"T-shirt");
+                Image_Model model=new Image_Model(R.drawable.shirt_category,"T-shirt");
                 imageButtons.add(model);
             }
             else if(i%10==2)
